@@ -1,0 +1,5 @@
+x1<-cbind(x=rnorm(400,1,3),y=rnorm(400,1,3))
+x2<-cbind(x=rnorm(300,1,0.5),y=rnorm(300,0,0.5))
+x3<-cbind(x=rnorm(300,0,0.1),y=rnorm(300,2,0.2))
+x<-rbind(x1,x2,x3)
+write.table(x,file="randomData.csv",sep=",",row.names=FALSE,col.names=FALSE)
